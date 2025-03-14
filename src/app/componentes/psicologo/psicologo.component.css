@@ -1,0 +1,29 @@
+.row{
+    padding-top: 10px;
+    
+}
+img{
+    max-width: 100%;
+}
+.card ,mb-3{border: 1px solid black;}
+@media (max-width: 768px) {
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; /* Asegura que las tarjetas se centren en la fila */
+    }
+  
+    .col-md-4, .col-12 {
+      display: flex;
+      justify-content: center; /* Centra las tarjetas dentro de su columna */
+      align-items: center; /* Centra las tarjetas verticalmente */
+      align-self: center; /* Asegura que las tarjetas estén centradas en su propio eje */
+      margin-bottom: 15px; /* Espaciado entre las tarjetas */
+      max-width: 90%; /* Ajusta el tamaño de las tarjetas en pantallas pequeñas */
+    }
+  
+    .card {
+      width: 100%; /* Asegura que las tarjetas usen todo el ancho disponible */
+    }
+  }
+  

@@ -1,0 +1,102 @@
+.body{
+    background: rgb(3, 0, 60);
+    background: linear-gradient(176deg, rgba(2,0,36,1) 0%, rgba(151,214,247,0.7058473047422094) 0%, rgba(255,255,255,0) 100%);}
+    .contenedor3 {
+        align-items: center;
+        padding: 20px;
+        display: flex;
+        justify-content: center; /* Esto alinea los elementos horizontalmente */
+        text-align: center;
+        max-width: 100%; /* Asegúrate de que el contenedor ocupe el 100% del ancho */
+        margin: 20px; /* Esto debería centrar el contenedor */
+    }
+    .imagen{
+        max-width: 60%;
+        max-height: 50%;
+    }
+    .ct31{
+        padding-left: 150px;
+        max-width: 100%;
+        text-align: left;
+    }
+    .contenedor {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        text-align: center;
+        width: 100%; /* Esto asegura que el contenedor ocupe todo el espacio disponible */
+    }
+    
+    .contenedor2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    
+.texto {
+    width: 40%;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.texto2 {
+    padding: 20px;
+    max-width: 100%;
+    padding-right: 20px;
+    text-align: center;
+}
+
+
+.carrusel {
+    
+    width: 40%;
+    padding: 10px;
+}
+img{
+    border-radius: 10px;
+}
+
+/* Efecto de zoom */
+@keyframes zoomEffect {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.zoomable {
+    transition: transform 0.5s ease-in-out;
+}
+
+.item{
+    padding: 10px;
+    max-width: 450px;
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    font-size: 20px;
+}
+@media (max-width: 768px) {
+    .ct31{
+        padding-left: 10px;}
+s
+    .contenedor3 {
+        padding: 10px;
+    }
+    .contenedor2{
+        flex-direction: column;
+    }
+    .contenedor3{
+        flex-direction: column;
+    }
+    .contenedor {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .texto, .carrusel {
+        width: 100%;
+        padding: 10px 0;
+    }
+}
