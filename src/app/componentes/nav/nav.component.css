@@ -6,3 +6,11 @@
 .collapse {
     justify-content: end;
 }
+.top{
+    transition: opacity 5s ease-in-out; /* Para un efecto de aparición suave */
+    background-color: rgba(0, 102, 156, 0.706);
+    justify-content: center;
+    justify-items: center;
+    font-size: 15px;
+    
+}
