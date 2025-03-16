@@ -1,5 +1,7 @@
 .card-custom {
-    width: 70%;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
     border: 1px solid black;
 }
 .col-md-4{
@@ -10,6 +12,10 @@
 }
 .container{
     justify-content: center;
+}
+img{
+
+    max-width: 50%;
 }
 @media (max-width: 768px) {
     .card-custom {
