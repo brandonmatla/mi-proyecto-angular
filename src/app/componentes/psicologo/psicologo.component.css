@@ -1,24 +1,73 @@
-.card-custom {
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    border: 1px solid black;
-}
-.col-md-4{
-    padding: 10px;
-}
-.row{
-    padding: 10px;
-}
-.container{
-    justify-content: center;
-}
-img{
+.body {
+    background: rgb(73, 73, 73);
+    background: linear-gradient(176deg,rgb(73, 73, 73) 0%, rgba(0, 101, 156, 0.141) 0%,rgb(255, 255, 255) 100%);
 
-    max-width: 50%;
 }
-@media (max-width: 768px) {
-    .card-custom {
-        width: 100%;  /* Las tarjetas tomarán el ancho completo en pantallas pequeñas */
+.contenedor {
+    
+    display: flex;
+    max-width: 100%;
+    height: 25%;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    align-items: center;
+    position: relative;
+    left: 20%;
+    right: 20%;
+    width: 60%;
+    box-sizing: border-box; 
+}
+
+.imagen,
+img {
+    height: 160px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.name {
+    color: black;
+}
+
+.grado {
+    color: gray;
+}
+
+.info {
+    max-width: 60%;
+    font-size: 10px;
+}
+
+.contacto {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 1px;
+}
+
+@media (max-width: 1280px) {
+
+    .imagen,img {
+        padding-top: 3px;
+        padding-bottom: 3px;
+        height: 150px;
+        margin-right: 0px;
+    }
+
+    .contenedor {
+        left: 0%;
+        right: 0%;
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+        height: auto;
+    }
+
+    button {
+        margin-bottom: 5%;
+    }
+
+    .info {
+        max-width: 100%;
+        font-size: 10px;
     }
 }

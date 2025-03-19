@@ -1,0 +1,75 @@
+.contenedor-cards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    background-color: black;
+}
+
+.card {
+    border: none solid transparent;
+    flex: 1;
+    max-width: 350px;
+    height: 380px;
+    border-radius: 7px;
+    padding: 0px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.871);
+}
+
+.precio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(110, 177, 34, 0.899);
+    border-radius: 5px 5px 0px 0px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    height: 100px;
+}
+.tips{
+    
+    padding-top: 70px;
+    padding-right: 10px;
+}
+
+.img {
+    width: 15px;
+    padding-right: 2px;
+}
+
+.info {
+    padding-top: 10px;
+    padding-left: 20px;
+    text-align: left;
+    justify-content: center;
+}
+
+@media (max-width: 900px) {
+    .tips{
+        text-align: center;
+        padding-top: 0px;
+        padding-right: 10px;
+    }
+    .precio {
+        background-color: rgba(110, 177, 34, 0.792);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+
+    .contenedor-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        height: auto;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+}
