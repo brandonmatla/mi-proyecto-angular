@@ -1,28 +1,38 @@
 .body {
-    background: rgb(73, 73, 73);
-    background: linear-gradient(176deg,rgb(73, 73, 73) 0%, rgba(0, 101, 156, 0.141) 0%,rgb(255, 255, 255) 100%);
+    background: 
+    linear-gradient(176deg, rgb(73, 73, 73) 0%, rgba(0, 101, 156, 0.141) 50%, rgba(255, 255, 255, 0.273) 100%), 
+    url('https://mdbootstrap.com/img/Photos/Others/images/78.jpg');
 
+    height: 100vh;
+    overflow-y: scroll ;
 }
 .contenedor {
-    
+    border: 2px solid black;
+    background-color: white;
+    padding-left: 20px;
     display: flex;
     max-width: 100%;
     height: 25%;
-    border-top: 1px solid gray;
-    border-bottom: 1px solid gray;
     align-items: center;
     position: relative;
     left: 20%;
-    right: 20%;
-    width: 60%;
+    right: 15%;
+    width: 65%;
     box-sizing: border-box; 
+    border-radius: 20px 20px 20px 20px;
+    margin-top: 20px;
 }
 
 .imagen,
 img {
+    filter: grayscale(0%);
     height: 160px;
     border-radius: 20px;
     margin-right: 10px;
+}
+img:hover{
+    transform: scale(1.09);
+    
 }
 
 .name {
@@ -30,7 +40,7 @@ img {
 }
 
 .grado {
-    color: gray;
+    color: rgb(0, 0, 0);
 }
 
 .info {

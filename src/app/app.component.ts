@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component ,ViewEncapsulation } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NavComponent } from "./componentes/nav/nav.component";
 
@@ -6,7 +6,8 @@ import { NavComponent } from "./componentes/nav/nav.component";
   selector: 'app-root',
   imports: [RouterOutlet, NavComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
+  encapsulation: ViewEncapsulation.None 
 })
 export class AppComponent {
   title = 'orientando-me';

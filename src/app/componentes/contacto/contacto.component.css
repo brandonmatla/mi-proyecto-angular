@@ -1,0 +1,35 @@
+.body{
+    background-image: url('https://mdbootstrap.com/img/Photos/Others/images/76.jpg');
+    height: 100vh;
+}
+.form{
+    background: black;
+    left: 25%;
+    right: 25%;
+    width: 50%
+}
+.row{
+    width: 75%;
+}
+.imagen{
+    flex: 0 0 41.6667%;  
+    max-width:100%;
+    max-height:100%;
+    display: flex; 
+}
+
+.container{
+    height: 90vh;
+}
+@media (max-width: 900px) {
+    .imagen{
+        max-width: 0%;
+        visibility: hidden;
+    }
+    .row{
+        width: 95%;
+    }
+    .container{
+        height: 70vh;
+    }
+}
